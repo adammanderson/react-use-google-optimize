@@ -3,6 +3,8 @@
 `useGoogleOptimize` is a React Hook that makes it easy to initialize Google Optimize experiments and add variant dependent logic to your components. It is assumed that Google Optimize source and `dataLayer` are already initialised on the `window`.
 
 ### Simple Usage
+Note: `variant` defaults to 0 if an experiment is `undefined`.
+
 ```
 function Experiment() {
   const variant = useGoogleOptimize('XXXXXXXXXXXX');
