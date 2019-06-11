@@ -25,11 +25,11 @@ function Experiment() {
 
   const activeVariant = () => (
     switch(variant) {
-      case '1': {
+      case 1: {
         return 'First Variant text';
         break;
       }
-      case '1': {
+      case 2: {
         return 'Second Variant text';
         break;
       }
