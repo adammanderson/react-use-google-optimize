@@ -19,7 +19,7 @@
     "google",
     "experiment",
     "variant",
-    "use",
+    "use"
   ],
   "peerDependencies": {
     "react": "^16.8.6"
