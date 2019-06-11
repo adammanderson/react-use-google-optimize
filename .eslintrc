@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6
+  }
+  "extends": [
+    "plugin:jest/recommended",
+    "jest-enzyme"
+  ],
+  "plugins": [
+    "babel"
+  ]
+}
