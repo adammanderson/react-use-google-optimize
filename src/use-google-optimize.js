@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export default function useGoogleOptimize(experimentID) {
   const [variant, setVariant] = useState(null);
   const updateVariant = (value) => {
-    setVariant(value === undefined || value === null ? value : parseInt(value));
+    setVariant(value === undefined || value === null ? 0 : parseInt(value));
   }
 
   useEffect(() => {

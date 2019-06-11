@@ -23,26 +23,15 @@ function Experiment() {
 function Experiment() {
   const variant = useGoogleOptimize('XXXXXXXXXXXX');
 
-  const activeVariant = () => (
-    switch(variant) {
-      case 0: {
-        return 'First Variant text';
-        break;
-      }
-      case 1: {
-        return 'Second Variant text';
-        break;
-      }
-      default: {
-        return 'Default text'
-        break;
-      }
-    }
-  )
+  const messages = {
+    0: 'Default text',
+    1: 'Second Variant text',
+    2: 'Third Variant text',
+  };
 
   return (
     <button>
-      {activeVariant}
+      {messages[variant]}
     </button>
   )
 }
