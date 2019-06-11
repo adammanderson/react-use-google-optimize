@@ -24,9 +24,9 @@ function Experiment() {
   const variant = useGoogleOptimize('XXXXXXXXXXXX');
 
   const messages = {
-    0: 'Default text',
-    1: 'Second Variant text',
-    2: 'Third Variant text',
+    '0': 'Default text',
+    '1': 'Second Variant text',
+    '2': 'Third Variant text',
   };
 
   return (
